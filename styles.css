@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 40px;
   border-radius: 15px;
   text-align: center;
@@ -19,7 +19,13 @@ body {
 
 h1 {
   color: #0077b6;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+#instruccion {
+  color: #0077b6;
+  margin-bottom: 25px;
+  font-size: 16px;
 }
 
 button {
@@ -31,7 +37,7 @@ button {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -39,29 +45,16 @@ button:hover {
   transform: scale(1.05);
 }
 
-#mensaje {
-  margin-top: 20px;
-}
-
-.principal {
-  font-weight: bold;
-  font-size: 20px;
+.linea {
+  font-size: 18px;
   color: #023e8a;
-  margin: 5px 0;
+  margin: 8px 0;
   opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s, transform 0.5s;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
 }
 
-.secundaria {
-  font-size: 16px;
-  color: #0077b6;
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s 0.2s, transform 0.5s 0.2s;
-}
-
-.show {
+.linea.mostrar {
   opacity: 1;
   transform: translateY(0);
 }
